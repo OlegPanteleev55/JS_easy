@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        let a = Number(prompt('Введите первое число'));
+        let b = Number(prompt('Введите второе число'));
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case 'sum':
+                    let sum = a + b;
+                    return sum;
+                case 'dif':
+                    let dif = a - b;
+                    return dif;
+                case 'mul':
+                    let mul = a * b;
+                    return mul;
+                case 'div':
+                    let div = a / b;
+                    return div;
+            }
+        }
+
+
+        let result = mathOperation(a, b, prompt("Введиет sum, dif, mul, div"));
+        alert('Результат равен ' + result);
+    </script>
+</body>
+
+</html>

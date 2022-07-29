@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        let a = Number(prompt('Введите первое число'));
+        let b = Number(prompt('Введите второе число'));
+
+		if (a >= 0 && b >= 0) {
+			alert(`Разность чисел ${a - b}`)
+        } else if (a < 0 && b < 0) {
+            alert(`Произведение чисел ${a * b}`)
+        } else if ((a < 0 && b >= 0) || (a >= 0 && b < 0)) {
+            alert(`Сумма чисел ${a + b}`)
+    </script>
+</body>
+
+</html>
